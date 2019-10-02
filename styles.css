@@ -1,0 +1,81 @@
+img {
+    display:flex;
+    flex-direction:row;
+    width:400px;
+    height:400px;
+    border: 1px solid black;
+    margin:5px;
+    position: relative;
+}
+
+body {
+    font-family:arial;
+    color: lightgrey;
+    font-weight:bold;
+}
+
+.octodex {
+    display: flex;
+}
+
+.octocat {
+    position:relative;
+    border:1px solid black;
+    border-top-style:none;
+    border-right-style:none;
+    border-left-style:none;
+    border-bottom-style:1px;
+    margin:5px;
+    list-style-type:none;
+}
+
+.image-number{
+    float:left;
+}
+
+.image-caption{
+    display:flex;
+    justify-content:flex-end;
+    justify-items:space-around;
+    align-items:center;
+}
+
+.image-caption span{
+    padding:0 5px;
+    
+}
+
+.authors img{
+    display:flex;
+    border-style:none;
+    width:30px;
+    height:30px;
+    bottom: 0px;
+    right: 0px;
+    float:right;
+}
+
+ul{
+    list-style-type:none;
+    padding: 0;
+}
+
+.image-footer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.image-number::before{
+    content:"#"
+}
+
+
+a:hover {
+    text-decoration-line:underline;
+}
+
+a{
+    color:black;
+    text-decoration-line:none;
+}
